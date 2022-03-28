@@ -1,0 +1,15 @@
+.delay-animation:nth-child(1) {
+    --animate-delay: 25ms;
+}
+.delay-animation:nth-child(2) {
+    --animate-delay: 50ms;
+}
+.delay-animation:nth-child(3) {
+    --animate-delay: 100ms;
+}
+.delay-animation:nth-child(4) {
+    --animate-delay: 125ms;
+}
+.delay-animation:nth-child(5) {
+    --animate-delay: 150ms;
+}

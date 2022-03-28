@@ -1,0 +1,23 @@
+<div class="animate__animated animate__fadeIn">
+    <h2>Por Capital</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col">
+            <app-pais-input (onBuscar)="buscar($event)" (onBuscarDebounce)="buscar($event)"
+                placeholder="Buscar capital..."></app-pais-input>
+        </div>
+    </div>
+    <hr>
+</div>
+
+
+<div class="alert alert-danger" *ngIf="error">
+    {{error}}
+</div>
+
+<div class="row" *ngIf="paises.length > 0">
+    <div class="col">
+        <app-tabla-paises [paises]="paises"></app-tabla-paises>
+    </div>
+</div>
